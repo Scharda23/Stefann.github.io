@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroPC</title>
+    <meta name="description" content="AstroPC - Your PC in the right orbit. Contact us for all your PC needs.">
+    <meta name="keywords" content="AstroPC, PC services, PC products, computer repair, custom PCs, gaming PCs">
+    <meta name="author" content="Stefan Kostadinović">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container d-flex align-items-center">
+                <a class="navbar-brand me-auto" id="logo" href="#hero">AstroPC</a>
+                <button class="navbar-toggler ms-auto" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto" id="navMenu"></ul>
+            </div>
+            </div>
+        </nav>       
+    </header>
+    <main class="main">
+        <section id="hero">
+            <div class="container-fluid h-100">
+                <div class="row h-100">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div id="heroContent" class="text-center">
+                            <h1 class="text-light">Your PC in the right orbit</h1>
+                            <p class="lead text-light">Contact us for all your PC needs</p>
+                            <a href="#forma" class="btn btn-primary btn-lg hero-btn">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Our Services</h2>
+                    </div>
+                </div>
+                <div class="row" id="servicesList"></div>  
+            </div>      
+        </section>
+        <section id="products">
+            <div class="container-xl">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Our Products</h2>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                         <select id="productFilter" class="form-select w-auto mx-auto"></select>
+                    </div>  
+                </div>
+                <div class="row" id="productsList"></div>
+            </div>
+        </section>
+        <section id="reviews">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Our Reviews</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-12">
+                        <div id="reviewBox"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="forma" class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-12" id="contactFormContainer"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container d-flex flex-column" id="footerLinksContainer"></div>
+        <p class="mb-3">&copy; 2026 AstroPC. All rights reserved.</p>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
